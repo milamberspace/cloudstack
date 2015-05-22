@@ -206,9 +206,9 @@ public abstract class LibvirtServerDiscoverer extends DiscovererBase implements 
             parameters += " --hypervisor=" + cluster.getHypervisorType().toString().toLowerCase();
 
             if (!SSHCmdHelper.sshExecuteCmd(sshConnection,
-                    "cloudstack-setup-agent " + parameters, 3)) {
+                    "sudo cloudstack-setup-agent " + parameters, 3)) {
                 s_logger.info("cloudstack agent setup command failed: "
-                        + "cloudstack-setup-agent " + parameters);
+                        + "sudo cloudstack-setup-agent " + parameters);
                 return null;
             }
 
