@@ -1,5 +1,6 @@
 # Apache CloudStack Installation basics
 
+Salut
 This document describes how to develop, build, package and install Apache
 CloudStack. For more information please refer to the official [documentation](http://docs.cloudstack.apache.org)
 or the developer [wiki](https://cwiki.apache.org/confluence/display/CLOUDSTACK/Home).
